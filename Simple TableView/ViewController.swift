@@ -12,7 +12,7 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
     
     @IBOutlet weak var myTable: UITableView!
     var data = ["고","양","이"]
-    var subdata = ["다","했","다"]
+    var subdata = ["다","했","다!"]
     override func viewDidLoad() {
         super.viewDidLoad()
         myTable.dataSource = self
