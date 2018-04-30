@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  Simple TableView
 //
-//  Created by D7703_06 on 2018. 4. 30..
+//  Created by D7703_14 on 2018. 4. 30..
 //  Copyright © 2018년 IceArrow. All rights reserved.
 //
 
@@ -11,8 +11,8 @@ import UIKit
 class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var myTable: UITableView!
-    var data = ["고양이","고슴도치","강아지"]
-    var subdata = ["11","22","33"]
+    var data = ["고","양","이"]
+    var subdata = ["다","했","다"]
     override func viewDidLoad() {
         super.viewDidLoad()
         myTable.dataSource = self
@@ -33,7 +33,7 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
         cell.textLabel?.text = data[indexPath.row]
         cell.detailTextLabel?.text = subdata[indexPath.row]
         //date,subdate의 안에 있는 값을 텍스트에 출력
-        let myImg = UIImage(named:"\(indexPath.row+1).jpeg")
+        let myImg = UIImage(named:"1.jpeg")
         cell.imageView?.image = myImg
         //이미지출력
         return cell
