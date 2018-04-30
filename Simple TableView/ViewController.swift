@@ -11,8 +11,8 @@ import UIKit
 class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var myTable: UITableView!
-    var data = ["1","2","3","4","5"]
-    var subdata = ["11","22","33","44","55"]
+    var data = ["고양이","고슴도치","강아지"]
+    var subdata = ["11","22","33"]
     override func viewDidLoad() {
         super.viewDidLoad()
         myTable.dataSource = self
@@ -32,10 +32,10 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
         
         cell.textLabel?.text = data[indexPath.row]
         cell.detailTextLabel?.text = subdata[indexPath.row]
-        
-        let myImg = UIImage(named:"cat.jpeg")
+        //date,subdate의 안에 있는 값을 텍스트에 출력
+        let myImg = UIImage(named:"\(indexPath.row+1).jpeg")
         cell.imageView?.image = myImg
-        //animals의 안에 있는 값을 텍스트에 출력
+        //이미지출력
         return cell
     }
 
