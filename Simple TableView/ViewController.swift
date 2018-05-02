@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  Simple TableView
 //
-//  Created by D7703_14 on 2018. 4. 30..
+//  Created by D7703_08 on 2018. 4. 30..
 //  Copyright © 2018년 IceArrow. All rights reserved.
 //
 
@@ -34,8 +34,8 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
         cell.detailTextLabel?.text = subdata[indexPath.row]
         //date,subdate의 안에 있는 값을 텍스트에 출력
         let myImg = UIImage(named:"1.jpeg")
-        cell.imageView?.image = myImg
-        //이미지출력
+        cell.imageView?.image = myImg//이미지출력
+      
         return cell
     }
 
